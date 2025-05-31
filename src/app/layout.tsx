@@ -31,15 +31,15 @@ export default function RootLayout({
                   <Image
                     src={wordart}
                     alt="wordart"
-                    style={{width: "50%", height: "auto"}}
+                    style={{width: "50%", height: "auto", minHeight: "10rem", minWidth: "10rem"}}
                     className="object-contain"
                   />
               </div>
-              <div className="text-xl text-pink-400 mb-10 underline underline-offset-4 flex items-center justify-around w-[100%]">
-                <a href="/portfolio_v2/">Home</a>
-                <a className="cursor-default">Resume & Portfolio</a>
-                <a className="cursor-default">Blog</a>
-                <a className="cursor-default">Web Thingies</a>
+              <div className="text-xl text-pink-400 mb-10 underline underline-offset-4 flex items-center flex-col lg:flex-row justify-around w-[100%]">
+                <a className="mb-3 lg:mb-0" href="/portfolio_v2/">Home</a>
+                <a className="mb-3 lg:mb-0 cursor-default">Resume & Portfolio</a>
+                <a className="mb-3 lg:mb-0 cursor-default">Blog</a>
+                <a className="mb-3 lg:mb-0 cursor-default">Web Things</a>
               </div>
               {children}
               <div className="mt-20 text-violet-600 text-center text-xs">

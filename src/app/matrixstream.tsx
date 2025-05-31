@@ -20,7 +20,6 @@ function randomUnicodeChar(min = 0x0000, max = 0x10FFFF) {
 export default function MatrixStream({ x }: StreamProps){
     const pRef = useRef<HTMLParagraphElement>(null);
     const [isAlive, setAlive] = useState(false)
-    const [isFirst, setFirst] = useState(true)
 
     async function generateTextStream(elementRef: HTMLParagraphElement | null){
         if (elementRef){
@@ -39,18 +38,11 @@ export default function MatrixStream({ x }: StreamProps){
         if (!isAlive && pRef.current) {
             pRef.current.innerHTML = ""
             pRef.current.classList.remove("fade-out")
-            if (isFirst){
-                setFirst(false)
-                setTimeout(() => {
-                    generateTextStream(pRef.current);
-                }, Math.floor(Math.random() * (5000 - 500 + 1)) + 500)
-            } else {
-                setTimeout(() => {
-                    generateTextStream(pRef.current);
-                }, Math.floor(Math.random() * (2500 - 1000 + 1)) + 500)
-            }
+            setTimeout(() => {
+                generateTextStream(pRef.current);
+            }, Math.floor(Math.random() * (2500 - 1000 + 1)) + 500)
         }
-    }, [isAlive, isFirst]);
+    }, [isAlive]);
 
     return(
         <p className="fixed text-violet-600 font-source-code-pro whitespace-pre-wrap w-[1rem]" style={{left: x}} ref={pRef}>

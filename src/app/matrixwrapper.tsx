@@ -21,9 +21,12 @@ export default function TheMatrix({
       return rez
     }
     const [streams, setStreams] = useState<number[]>([])
-    let width = 0
+    const [width, setWidth] = useState(0)
     useEffect(() => {
-      width = window.innerWidth
+      const handleResize = () => setWidth(window.innerWidth)
+
+      window.addEventListener('resize', handleResize)
+      return () => window.removeEventListener('resize', handleResize)
     }, [])
     useEffect(() => {
       setStreams(generateRemArray(window.innerWidth))
