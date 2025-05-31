@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import "./css/globals.css";
 import "./css/matrix.css"
 import { wait } from "./scripts/globals"
-import { prefetchDNS } from "react-dom";
 
 interface StreamProps{
     x: number
@@ -51,7 +50,7 @@ export default function MatrixStream({ x }: StreamProps){
                 }, Math.floor(Math.random() * (2500 - 1000 + 1)) + 500)
             }
         }
-    }, [isAlive]);
+    }, [isAlive, isFirst]);
 
     return(
         <p className="fixed text-violet-600 font-source-code-pro whitespace-pre-wrap w-[1rem]" style={{left: x}} ref={pRef}>

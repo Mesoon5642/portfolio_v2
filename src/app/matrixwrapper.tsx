@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import MatrixStream from "./matrixstream";
-import { wait } from "./scripts/globals";
 
 
 
@@ -14,7 +13,7 @@ export default function TheMatrix({
     function generateRemArray(windowWidth: number){
       let curVal = 0
       const remInPx = 16;
-      let rez: number[] = []
+      const rez: number[] = []
       while (curVal < windowWidth){
         rez.push(curVal)
         curVal += remInPx
