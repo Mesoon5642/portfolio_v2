@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from "remark-gfm";
 import rehypeRaw from 'rehype-raw'
 import remarkImages from 'remark-images';
+import * as React from 'react'
 
 
 export async function generateStaticParams() {
@@ -21,8 +22,8 @@ type Props = {
   };
 };
 
-export default async function RenderMarkdown({ params }: Props){
-  const { slug } = await params;
+export default function RenderMarkdown({ params }: Props){
+  const { slug } = params;
   const filePath = path.join(process.cwd(), 'src/app/blog/_entries', `${slug}.md`);
   const content = fs.readFileSync(filePath, 'utf-8');
   return(
