@@ -23,7 +23,7 @@ export default function Home(){
                 Where to Find Me:
             </p>
             <div className="flex w-[100%] justify-center">
-                <div className="flex justify-around w-[100%] md:w-[50%] underline underline-offset-3 text-pink-400">
+                <div className="flex justify-around w-[100%] lg:w-[50%] underline underline-offset-3 text-pink-400">
                     <a href="https://github.com/Mesoon5642" target="_blank">Github</a>
                     <a href="http://www.linkedin.com/in/mason-shields-713613289" target="_blank">LinkedIn</a>
                     <a href="mailto:masonlshields@gmail.com" target="_blank">Email</a>
