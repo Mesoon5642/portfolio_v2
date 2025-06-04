@@ -16,8 +16,8 @@ export function generateStaticParams() {
   }));
 }
 
-export default function RenderMarkdown({ params }: { params: { slug: string } }){
-  const { slug } = params;
+export default async function RenderMarkdown({ params }: { params: Promise<{ slug: string }> }){
+  const { slug } = await params;
   const filePath = path.join(process.cwd(), 'src/app/blog/_entries', `${slug}.md`);
   const content = fs.readFileSync(filePath, 'utf-8');
   return(
