@@ -16,13 +16,13 @@ export function generateStaticParams() {
   }));
 }
 
-type BlogProps = {
+interface PageProps {
   params: {
     slug: string;
   };
 };
 
-export default function RenderMarkdown({ params }: BlogProps){
+export default function RenderMarkdown({ params }: PageProps){
   const { slug } = params;
   const filePath = path.join(process.cwd(), 'src/app/blog/_entries', `${slug}.md`);
   const content = fs.readFileSync(filePath, 'utf-8');
