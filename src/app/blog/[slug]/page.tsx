@@ -7,7 +7,7 @@ import remarkImages from 'remark-images';
 import * as React from 'react'
 
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const postsDir = path.join(process.cwd(), 'src/app/blog/_entries');
   const files = fs.readdirSync(postsDir);
 
@@ -16,13 +16,13 @@ export async function generateStaticParams() {
   }));
 }
 
-type Props = {
+type PageProps = {
   params: {
     slug: string;
   };
 };
 
-export default function RenderMarkdown({ params }: Props){
+export default function RenderMarkdown({ params }: PageProps){
   const { slug } = params;
   const filePath = path.join(process.cwd(), 'src/app/blog/_entries', `${slug}.md`);
   const content = fs.readFileSync(filePath, 'utf-8');
