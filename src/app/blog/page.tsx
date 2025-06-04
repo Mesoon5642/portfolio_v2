@@ -17,7 +17,6 @@ export default async function Blog(){
             const filePath = path.join(postsDir, file);
             const content = fs.readFileSync(filePath, 'utf-8');
             const lines = content.split(/\r?\n/).slice(0, 2);
-            console.log(lines)
             result.push({
                 filename: file.replace(/\.md$/, ''),
                 date: lines[0].substring(3),

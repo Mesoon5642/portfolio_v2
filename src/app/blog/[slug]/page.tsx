@@ -49,7 +49,7 @@ export default async function RenderMarkdown({ params }: { params: Promise<{ slu
                 ),
                 img: ({node, ...props}) => (
                     <div className="flex items-center justify-center">
-                        <img style={{borderStyle: "ridge"}} className="my-5 w-[80%] border-20 border-violet-600 object-contain" {...props} />
+                        <img style={{borderStyle: "ridge"}} className="my-5 w-[100%] md:w-[80%] border-2 md:border-20 border-violet-600 object-contain" {...props} />
                     </div>
                 ),
                 }}
