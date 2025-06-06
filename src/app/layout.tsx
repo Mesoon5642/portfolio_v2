@@ -26,7 +26,7 @@ export default function RootLayout({
       >
         <TheMatrix>
           <div className="z-10 w-[100%]">
-            <div className="absolute min-h-screen h-auto bg-black absolute text-teal-200 p-5 border-x-2 border-violet-600 w-[75%] md:w-[50%] mx-[12.5%] md:mx-[25%] content-container">
+            <div className="absolute min-h-screen h-auto bg-black absolute text-teal-200 p-5 border-x-2 border-violet-600 w-[90%] md:w-[75%] lg:w-[50%] mx-[5%] md:mx-[12.5%] lg:mx-[25%] content-container">
               <div className="flex justify-center items-center">
                   <Image
                     src={wordart}

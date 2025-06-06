@@ -23,9 +23,9 @@ export default async function Blog(){
                 title: lines[1].substring(2)
             })
       })
-      return result.map((fileobj) => (
+      return result.reverse().map((fileobj) => (
         <div>
-            <BlogEntry date={fileobj.date} title={fileobj.title} filename={fileobj.filename} />
+            <BlogEntry key={fileobj.filename} date={fileobj.date} title={fileobj.title} filename={fileobj.filename} />
             <hr></hr>
         </div>
       ));
