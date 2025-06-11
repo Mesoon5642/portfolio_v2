@@ -1,5 +1,11 @@
 import Image from "next/image"
 import faceimage from "../../public/masonimage.jpg"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mason's Portfolio",
+  description: "Mason's Portfolio Website",
+};
 
 export default function Home(){
     return(
