@@ -7,7 +7,7 @@ export default function PortfolioPage(){
     return (
         <div>
             <div className="text-center my-10">
-                <a style={{borderStyle: "ridge"}}className="bg-violet-950 inline-block border-8 border-emerald-500 p-5 text-3xl text-pink-400 underline underline-offset-4" download href="/portfolio_v2/portfolio/MLSResume.pdf">Resume Link</a>
+                <a style={{borderStyle: "ridge"}}className="bg-violet-950 inline-block border-8 border-emerald-500 p-5 text-3xl text-pink-400 underline underline-offset-4" download href="/portfolio/MLSResume.pdf">Resume Link</a>
             </div>
             <div className="text-xl bold underline underline-offset-4 text-center my-5">
                 Projects:
