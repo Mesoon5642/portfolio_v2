@@ -5,6 +5,13 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Mason's Portfolio",
   description: "Mason's Portfolio Website",
+  openGraph: {
+    title: "Mason's Portfolio",
+    description: "Mason's Portfolio Website",
+    url: 'https://masonshields.dev',
+    siteName: 'masonshields.dev',
+    type: 'website'
+  },
 };
 
 export default function Home(){
