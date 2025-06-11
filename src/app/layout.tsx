@@ -37,9 +37,9 @@ export default function RootLayout({
               </div>
               <div className="text-xl text-pink-400 mb-10 underline underline-offset-4 flex items-center flex-col lg:flex-row justify-around w-[100%]">
                 <a className="mb-3 lg:mb-0" href="/portfolio_v2/">Home</a>
-                <a className="mb-3 lg:mb-0 cursor-default">Resume & Portfolio</a>
+                <a className="mb-3 lg:mb-0" href="/portfolio_v2/portfolio">Resume & Portfolio</a>
                 <a className="mb-3 lg:mb-0" href="/portfolio_v2/blog">Blog</a>
-                <a className="mb-3 lg:mb-0 cursor-default">Web Things</a>
+                {/* <a className="mb-3 lg:mb-0 cursor-default">Web Things</a> */}
               </div>
               {children}
               <div className="mt-20 text-violet-600 text-center text-xs">

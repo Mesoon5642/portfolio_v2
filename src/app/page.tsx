@@ -4,7 +4,7 @@ import faceimage from "../../public/masonimage.jpg"
 export default function Home(){
     return(
         <div className="text-center m-5">
-            <p className="mb-5">Hello there! I'm Mason Shields, welcome to my <span className="underline underline-offset-3">(under construction)</span> portfolio website!</p>
+            <p className="mb-5">Hello there! I'm Mason Shields, welcome to my <span className="underline underline-offset-3 text-emerald-400">(under construction)</span> portfolio website!</p>
             <p className="mb-5">I want to use this place as somewhere where I can document my CS career, ramble on about my code among other things, keep people posted on what I'm up to, and maybe make someone's day a little better!</p>
             <div className="flex justify-center">
                 <Image 
@@ -19,6 +19,7 @@ export default function Home(){
             <p className="text-emerald-500 mb-10">Caption: Me, for reference</p>
             <p className="mb-5">As a developer, I primarily work with full stack web development with a specialization in backend. I use React, Next.js, and Tailwind for a lot of my work, and am most familiar with Python and C++ for heavy duty DSA things.</p>
             <p className="mb-5">If you want a longer "brag sheet" than that, read my resume! I like to think I'm a humble guy, and I'd rather have my website showcase the things I build than list the lines on my resume.</p>
+            <p className="mb-5">Finally, while this website works well on mobile, some content may look quite small. Akin to many websites of the 90's, <span className="underline underline-offset-3 text-emerald-400">this is best enjoyed on desktop!</span></p>
             <p className="text-emerald-500 mb-2">
                 Where to Find Me:
             </p>
