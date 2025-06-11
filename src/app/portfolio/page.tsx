@@ -64,7 +64,7 @@ export default function PortfolioPage(){
                 <div className="mx-2">
                     <Image 
                             src={p4_pokemon}
-                            alt="machine learning test data"
+                            alt="pokémon TSP data"
                             className="static mb-2 border-20 border-violet-600 object-contain"
                             style={{borderStyle: "ridge"}}
                     />

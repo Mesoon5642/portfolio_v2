@@ -25,7 +25,11 @@ jobs:
           npm run build
           # Make sure .nojekyll is present to disable Jekyll on GitHub Pages
           touch out/.nojekyll
-      # Test comment
+     
+     
+      - name: Add CNAME
+        run: echo "www.masonshields.dev" > ./out/CNAME
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
