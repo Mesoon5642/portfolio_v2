@@ -71,9 +71,9 @@ export default function PortfolioPage(){
                 </div>
                 <p className="text-emerald-500 mb-2">Caption: Some (cropped) optimal TSP output. The top line is total path length, the bottom line is the path between node indexes.</p>
             </div>
-            <div style={{borderStyle: "ridge"}} className="bold p-2 lg:mx-5 text-center my-5 border-2 border-violet-600">
+            {/* <div style={{borderStyle: "ridge"}} className="bold p-2 lg:mx-5 text-center my-5 border-2 border-violet-600">
                 Note: I am aware of my lack of personal projects beyond internships and class, and am working to remedy it as much as possible! Stay tuned, and check this page and my blog frequently :).
-            </div>
+            </div> */}
         </div>
     )
 }
